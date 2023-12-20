@@ -1,5 +1,7 @@
 # Notes for 'Foundations'
 
+## General Web Structure
+
 ### Knowledge Check 1
 
 > #### What is a web server?
@@ -107,7 +109,46 @@
 > #### What is the purpose of the body element?
 >> The purpose is to display content to the browser.
 
-## Useful Links
+## Working with Text
+
+### Elements
+
+```<p></p>``` = Paragraph tag, meant to contain a single paragraph's worth of text.
+
+```<h(1-6)></h(1-6)>``` = Heading tags, displayed Larger and bolder.  1 is largest, and 6 is smallest.
+
+```<strong></strong>``` = Strong tag makes text bold and semantically marks the text as important.
+
+```<em></em>``` = Emphasis tag makes text itallic and semantically places emphasis on the text.
+
+```<!-- (text here) -->``` = Syntax for writing comments in html.  Will not be displayed to the browser.
+
+### Knowledge Check 4
+> #### How do you create a paragraph in HTML?
+>> Use the ```<p></p>``` tags in the ```<body>``` element
+>
+> #### How do yu create a heading in HTML?
+>> Use the ```<h(1-6)></h(1-6)>``` tags in the ```<body>``` element
+>
+> #### How many different levels of headings are there and what is the difference between them?
+>> 6...  They are ordered by importance from 1 to 6, getting less big and bold as the numbers ascend.
+>
+> #### What element should you use to make the text bold and important?
+>> ```<strong></strong> or <b></b>```
+>
+> #### What element should you use to make the text italicized to add emphasis to it?
+>> ```<em></em> or <i></i>```
+>
+> #### What relationship does an element have with any nested elements within it?
+>> Parent relationship
+>
+> #### What relationship do two elements have if they are of the same level of nesting?
+>> Sibling
+>
+> #### How do you create HTML comments?
+> ```<!-- txt -->```
+
+# Useful Links
 > [Introductory HTTP](https://launchschool.com/books/http/read/background)
 >
 > [API Documentation](https://devdocs.io/)
