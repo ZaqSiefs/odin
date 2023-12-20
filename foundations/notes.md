@@ -148,6 +148,26 @@
 > #### How do you create HTML comments?
 > ```<!-- txt -->```
 
+## Lists
+
+### Elements
+
+```<ul></ul>``` = Unordered list wrapper.
+
+```<ol></ol>``` = Ordered list wrapper.
+
+```<li></li>``` = List item. Child of both list types.
+
+### Knowledge Check 5
+> #### What HTML element is used to create an unordered list?
+>> ```<ul></ul>```
+>
+> #### What HTMl element is used to create an ordered list?
+>> ```<ol></ol>```
+>
+> #### What HTML element is used to create list items within both unordered and ordered lists?
+>> ```<li></li>```
+
 # Useful Links
 > [Introductory HTTP](https://launchschool.com/books/http/read/background)
 >
