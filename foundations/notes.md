@@ -168,6 +168,64 @@
 > #### What HTML element is used to create list items within both unordered and ordered lists?
 >> ```<li></li>```
 
+## Links and Images
+
+### Elements
+
+```<a></a>``` = Anchor allows us to link to other files.
+
+>Attributes
+>
+> ```target``` = Specifies where the linked resource will be opened
+> - _self (default)
+> - _blank (new tab/window)
+> - _parent (parent frame)
+> - _top (full body of window)
+>
+> ```rel``` = Describes relation between the current page and linked document.  Use ="noopener noreferrer" for security purposes when using _blank.
+
+```<img>``` = Self enclosing image element that embeds an image inot the page using a src attribute.
+
+> Attributes
+>
+> ```src``` = Tells browser where the image file is located. Works much like href, ad can embed an image using absolute and relative paths.
+>
+> ```alt``` = Text used in place of an image if the image cannot be loaded.
+>
+> ```height``` = The vertical pixel count
+>
+> ```width``` = The horizontal pixel count
+
+### Knowledge Check 6
+
+> #### What element is used to create a link?
+>> ```<a></a>```
+>
+> #### What is an attribute?
+>> An attribute is a tag's variable that we can set 
+>
+> #### What attribute tells links where to go?
+>> ```target```
+>
+> #### What security considerations must be taken if using ```_blank``` with ```target```?
+>> use the ```ref``` attribute and pass "noopener noreferrer" to protect the website from bad actors.
+>
+> #### What is the difference between an absolute and relative link?
+>> - Absolute links point directly to a page or file using the protocol (http).
+>> - Relative links point to a page or file in relation to the current directory.
+>
+> #### Which element is used to display an image?
+>> ```<img>```
+>
+> #### What two attributes do images always need to have?
+>> ```src``` and ```alt```
+>
+> #### How do you access a parent directory in a filepath?
+> ```../```
+>
+> #### What are the four main image formats that you can use for images on the web?
+>> .png, .jpg, .gif, .svg
+
 # Useful Links
 > [Introductory HTTP](https://launchschool.com/books/http/read/background)
 >
