@@ -1,6 +1,6 @@
 # Notes for 'Foundations'
 
-## Knowledge Check 1
+### Knowledge Check 1
 
 
 > ### What is a web server?
@@ -49,12 +49,31 @@
 > ### Describe the process that takes place when you initiate a search on google in terms of what we discussed.
 >> Essentially, after being connected to the internet via a router and my ISP, I have used my web browser to open up Google's 'search engine' website at their domain 'google.com' (an alias for whatever IP address they are using).  When I type in a request string and submit the form, an HTTP request is sent to the appropriate server, and it returns an HTTP response containing the results of my query.  These results are listed on an html webpage that my browser interprets, and contains many hyperlinks to additional websites that are hosted on different servers across the world.  There is far more nuance here, but this expresses the basic premise.
 
-## Knowledge Check 2
+## HTML
+### Elements and Tags
+```<>``` = Opening tag
+
+```</>``` = Closing tag
+```html
+<p> Paragraph Text </p>
+```
+
+### Knowledge Check 2
+> What is an HTML Tag?
+>> An HTML tag is essentially a wrapper that defines the start and end of HTML elements
+>
+> What are the 3 parts of an HTMl element?
+>> 1. Opening Tag ```<>```
+>> 2. Content ```Usually Text```
+>> 3. Closing Tag ```</>```
+
 
 ## Useful Links
-> ### Introductory HTTP:
-> https://launchschool.com/books/http/read/background
+> [Introductory HTTP](https://launchschool.com/books/http/read/background)
 >
-> ### 
+> [API Documentation](https://devdocs.io/)
+>
+> [HTML Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
 
 
