@@ -5,6 +5,7 @@
 
 ```</>``` = Closing tag
 ```html
+<!-- HTML -->
 <p> Paragraph Text </p>
 ```
 
@@ -34,6 +35,20 @@
 #### Body:
 
 ```<body></body>``` = Where all the content displayed to useres go. This is where a majority of the HTML elements will be located
+
+#### All put together:
+```html
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+    </body>
+</html>
+```
 
 ## Working with Text
 
@@ -65,7 +80,7 @@
 
 ```<a></a>``` = Anchor allows us to link to other files.
 
->Attributes
+> Attributes
 >
 > ```target``` = Specifies where the linked resource will be opened
 > - _self (default)
@@ -86,3 +101,7 @@
 > ```height``` = The vertical pixel count
 >
 > ```width``` = The horizontal pixel count
+
+## div
+
+```<div></div>``` acts as an empty container that allows us to perform CSS and Javascript to all that lives within it.  There is no direct effect on the display of elements that are in a ```<div>``` element.
