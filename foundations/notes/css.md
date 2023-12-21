@@ -278,4 +278,89 @@ Adding styles directly to HTML elements. **Not recommended**
 </body>
 ```
 
+## Cascade
 
+This is what determines which rules get applied to HTML.
+
+### Specificity
+
+More specific declarations will take precedence over less specific ones.
+
+1. ID selectors
+2. Class selectors
+3. Type selectors
+
+Precedence of selectors of the same type are determined by the amount of instances of that selector.
+```html
+<!-- HTML -->
+<div class="main">
+    <div class="list subsection">Red text</div>
+</div>
+```
+```css
+/* CSS */
+/* rule 1 */
+.subsection {
+    color: blue;
+}
+/* rule 2 */
+.main .list {
+    color: red;
+}
+```
+
+above, rule 2 is more specific and would take precedence over rule 1.
+
+```html
+<!-- HTML -->
+<div class="main">
+    <div class="list" id="subsection">Red text</div>
+</div>
+```
+```css
+/* CSS */
+/* rule 1 */
+#subsection {
+    color: blue;
+}
+/* rule 2 */
+.main .list {
+    color: red;
+}
+```
+
+above, rule 1 uses an ID, which is more specific than even multiple classes, and would take precedence over rule 2.
+
+```html
+<!-- HTML -->
+<div class="main">
+    <div class="list" id="subsection">Red text</div>
+</div>
+```
+```css
+/* CSS */
+/* rule 1 */
+#subsection {
+    color: blue;
+}
+/* rule 2 */
+.main #subsection {
+    color: red;
+}
+```
+
+above, since both have the same number of IDs, the cascade sees that rule 2 has a class selector and rule 1 does not.  Rule 2 would then get precedence
+
+```*``` has no specificity, meaning even type selectors will take precedence
+
+### Inheritance
+
+CSS properties that when applied to an element, are ingerited by that element's descendants.
+
+```typography-based``` properties are usually inherited (```color```, ```font-size```, etc.)
+
+Directly targeting an element will always beat inheritance.
+
+### Rule Order
+
+The final tiebreaker will go to the rule that is defined last.
