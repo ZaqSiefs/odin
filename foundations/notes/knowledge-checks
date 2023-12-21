@@ -134,3 +134,54 @@
 >
 > ### What are the four main image formats that you can use for images on the web?
 >> .png, .jpg, .gif, .svg
+
+## Intro to CSS
+
+> ### What is the syntax for class and ID selectors>
+>> ```class``` = ```.(class_name)```
+>>
+>> ```id``` = ```#(ID_name)```
+>
+> ### How would you apply a single rule to two different selectors?
+>
+>> Basic combining
+>>
+>> ```css
+>> .one,
+>> .two {
+>> color: black;
+>>}
+>> ```
+>> chaining
+>>
+>>```css
+>> .one.two{
+>> color: black;
+>>}
+>>```
+>> or descendant combinator
+>>```css
+>>.one .two{
+>> color: black
+>>}
+>>```
+>
+> ### Given an element that has an id of #title and a class of .primary, how would you use both attributes for a single rule?
+>
+>> chaining
+>
+> ### What does the descendant combinator do?
+>
+>> The descendant combinator selects only the elements with the given parent structure.
+>
+> ### What are the names of the three ways to add CSS to HTML?
+>
+>> External, Internal, Inline
+>
+>> ### What are the differences?
+>
+>> ```External``` is when a separate CSS file is used for stylingk, and is then linked using the ```<link>``` element inside of the html ```<head>``` element.
+>>
+>> ```Internal``` is when CSS styling is used inside of a ```<style>``` element in the html ```<head>``` element
+>>
+>> ```Inline``` is when CSS styling is used inside of the ```style=""``` attribute of any display element.
