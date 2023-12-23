@@ -364,3 +364,54 @@ Directly targeting an element will always beat inheritance.
 ### Rule Order
 
 The final tiebreaker will go to the rule that is defined last.
+
+## The Box Model
+
+Most important thing to master with CSS is *positioning* and *layout*
+
+Every sing thing on a webpage is a rectangular box. They may have additional boxes inside, and can sit alongside eachother.
+
+```padding``` = the space between the border of a box and the content of the box, in pixels from **each side**. Holds the background color.
+
+```border``` = the space between the margin and the padding, in pixels from **each side**.  Given own color.
+
+```margin``` = the space between the borders of a box and the borders of adjacent boxes, in pixels from **each side**. Collapses with other virtical margins, giving the larger margin the priority.  4 arguments: **Top, Left, Bottom, Right** can be defined.  Can use negative values.
+
+> ![boxmodel](img/boxmodel.png "Title")
+
+the ```box-sizing``` attribute will calculate the entire size of an object from the ```height``` attribute.  Applying the border and padding sizes will subtract from the height value, leaving the remainder as the element size. Best practice is to add this to ```*``` (all) elements.
+
+### Outer Display Type
+
+#### Block
+
+If a box is of outer display type ```block```, then:
+
+- Box will break onto new line
+- width and height properties are respected
+- padding, margin, and border will cause other elements to be pushed away from box
+- if width is not specified, box will extend in the inline direction to fill the space available in it's container.
+- ```<h1>``` and ```<p>``` use ```block``` as outer display type by default.
+
+#### Inline
+
+If box has an outer display type of ```inline```, then:
+
+- Box will not break into new line
+- width and height properties will not apply
+- top and bottom padding, margins, and borders will apply but will not cause other inline boxes to move away from the box
+- left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box.
+- ```<a>```, ```<span>```, ```<em>```, and ```strong``` use ```inline``` outer display by default
+
+### Inner Display Type
+
+Dictates how elements inside the box are laid out.
+
+elements inside of a box are laid out in **normal flow** by default.
+
+Can change the inner display type by setting ```display: flex;``` where the outer display will still be ```block```, but the inner display will become ```flex```.  Any children of this box will maintain ```flex```
+
+
+
+
+

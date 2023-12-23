@@ -185,3 +185,47 @@
 >> ```Internal``` is when CSS styling is used inside of a ```<style>``` element in the html ```<head>``` element
 >>
 >> ```Inline``` is when CSS styling is used inside of the ```style=""``` attribute of any display element.
+
+## Cascade
+
+> ### Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the highter specificity?
+>
+>> The one that uses a a class selector.
+
+## Box Model
+
+> ### From inside to outside, what is the order of box-model properties?
+>
+>> Padding, Border, Margin
+>
+> ### What does the box-sizing CSS property do?
+>
+>> It makes the box model and alternative box
+>
+> What is the difference between the standard and alternative box model?
+>
+>> It allows the ```height``` and ```width``` properties to be the full size of an element. Then you can use the ```border``` and ```padding``` properties to subtract from total size.
+>
+> Would you use ```margin``` or ```padding``` to create more space between 2 elements?
+>
+>> ```margin```
+>
+> Would you use ```margin``` or ```padding``` to create more space between the contents of an element and its border?
+>
+>> ```padding```
+>
+> Would you use ```margin``` or ```padding``` if you wanted two elements to overlap eachother?
+>
+>> ```margin```
+>
+> How do you set the alternative box model for all of your elements?
+>
+>> ```css
+>> box-sizing: border-box; 
+>>```
+>
+> How do you center an element horizontally?
+>
+>> ```css
+>> width: auto;
+>>```

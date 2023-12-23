@@ -6,6 +6,8 @@
 > [API Documentation](https://devdocs.io/)
 >
 > [HTML Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-
+>
+> [CSS Specificity Calculator](https://specificity.keegan.st/)
+>
 
 
