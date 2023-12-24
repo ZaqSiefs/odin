@@ -411,7 +411,44 @@ elements inside of a box are laid out in **normal flow** by default.
 
 Can change the inner display type by setting ```display: flex;``` where the outer display will still be ```block```, but the inner display will become ```flex```.  Any children of this box will maintain ```flex```
 
+## Flexbox
 
+Flexbox is a way to arrange items into rows or columns, and these items will flex (grow and shrink)
 
+#### Flex Container
 
+A flex container is any element that has ```display: flex``` on it.
 
+#### Flex Item
+
+A flex item is any element that lives directly inside of a flex container
+
+![basicFlex](img/basicFlex.png)
+
+A flex container may also be a flex item, and vice versa
+
+![nestedFlex](img/nestedFlex.png)
+
+This property allows us to created complicated layouts that can scale to any screen size.
+
+![complexFlex](img/complexFlex.png)
+
+## Growing and Shrinking
+
+```flex``` is shorthand for 3 properties that can be set on a flex item. They affect how flex items size themselves within their container.  It is shorthand for ```flex-grow```, ```flex-shrink```, and ```flex-basis```.
+
+```flex-grow``` = expects a single number as its "growth factor".  If every element has the size 1, then they are all the same size.  Assigning an item '2' would make it twice the size.
+
+```flex-shrink``` = is only applied if the size of all flex items is larger than the parent container.  Can apply '0' if no shrinking is desired, '1' if even shrinking is desired, or  '2+' if multiplative shrinking is desired.
+
+```flex-basis``` = sets the initial size of a flex item so that any ```flex-grow``` or ```flex-shrink``` start from the baseline size. Default = auto. Set to ```auto``` to use the given width declaration, otherwise it will be ignored.  Also, when using the ```flex``` shorthand, the default value becomes 0, not none.
+
+### flex shorthands
+
+```flex: initial``` = ```flex: 0 1 auto```.  Sizes item based on width and height. Makes the flex item inflexible when there is free space, but allows it to shrink to minimum size if there is insufficient space.
+
+```flex: auto``` = ```flex: 1 1 auto```.  Sizes item based on width and height. Makes the flex item fully flexible.
+
+```flex: none``` = ```flex: 0 0 auto```. Sizes item according to width and height.  Makes the flex item fully inflexible.
+
+```fles: <positive-number>``` = ```flex: <positive-number> 1 0```. Makes flex item flexible and sets basis to 0.  Receives the specified proportion of the free space in the flex container.  If all items use this pattern, their sizes will be proportional to the specified flex factor.

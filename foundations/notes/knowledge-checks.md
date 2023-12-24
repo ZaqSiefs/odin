@@ -202,30 +202,76 @@
 >
 >> It makes the box model and alternative box
 >
-> What is the difference between the standard and alternative box model?
+> ### What is the difference between the standard and alternative box model?
 >
 >> It allows the ```height``` and ```width``` properties to be the full size of an element. Then you can use the ```border``` and ```padding``` properties to subtract from total size.
 >
-> Would you use ```margin``` or ```padding``` to create more space between 2 elements?
+> ### Would you use ```margin``` or ```padding``` to create more space between 2 elements?
 >
 >> ```margin```
 >
-> Would you use ```margin``` or ```padding``` to create more space between the contents of an element and its border?
+> ### Would you use ```margin``` or ```padding``` to create more space between the contents of an element and its border?
 >
 >> ```padding```
 >
-> Would you use ```margin``` or ```padding``` if you wanted two elements to overlap eachother?
+> ### Would you use ```margin``` or ```padding``` if you wanted two elements to overlap eachother?
 >
 >> ```margin```
 >
-> How do you set the alternative box model for all of your elements?
+> ### How do you set the alternative box model for all of your elements?
 >
 >> ```css
 >> box-sizing: border-box; 
 >>```
 >
-> How do you center an element horizontally?
+> ### How do you center an element horizontally?
 >
 >> ```css
 >> width: auto;
 >>```
+
+## Block and Inline
+
+> ### What is the difference between a block element and an inline element?
+>
+>> Block elements start on a new line whereas inline elements do not.
+>
+> ### What is the difference between an inline element and an inline-block element?
+>
+>> Inline elements dont respect vertical spacing, whereas inline-block elements do.
+>
+> ### Is an ```h1``` block or inline?
+>
+>> Block
+>
+> ### Is ```button``` block or inline?
+>
+>> Inline
+>
+> ### Is ```div``` block or inline?
+>
+>> Block
+>
+> ### is ```span``` block or inline?
+>
+>> Inline
+
+## Intro to Flexbox
+
+> ### What is the difference between a flex container and a flex item?
+>
+>> A flex container is the parent element of all child flex items.
+>
+> ### How do you create a flex item?
+>
+>> Any element that lives inside of a flex container parent element will become a flex item.
+
+## Growing and Shrinking
+
+> ### What are the 3 values defined in the shorthand ```flex``` property?
+>
+>> ```flex-grow```, ```flex-shrink```, ```flex-basis```
+>
+> ### What are the 3 defined values for the flex shorthand ```flex: auto```?
+>
+>> ```flex: 1 1 auto```
