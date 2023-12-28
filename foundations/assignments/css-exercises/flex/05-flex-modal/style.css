@@ -20,6 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px;
 }
 
 .icon {
@@ -33,6 +38,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
+
+}
+
+.prompt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header{
+  font-weight: bold;
 }
 
 .close-button {
@@ -54,6 +71,10 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.submit-buttons {
+  margin-top: 12px
 }
 
 button.continue {
