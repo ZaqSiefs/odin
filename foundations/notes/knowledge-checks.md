@@ -275,3 +275,21 @@
 > ### What are the 3 defined values for the flex shorthand ```flex: auto```?
 >
 >> ```flex: 1 1 auto```
+
+## Axes
+
+> ### How do you make flex items arrange themselves vertically instead of horizontally?
+>
+>> ```flex-direction: column```
+>
+> ### In a column flex-container, what does ```flex-basis``` refer to?
+>
+>> ```height```
+>
+> ### In a row flex-container, what does ```flex-basis``` refer to?
+>
+>> ```width```
+>
+> ### Why do the previous two questions have different answers?
+>
+>> This is because ```flex-basis``` refers to the minimum pixel length that elements must occupy before collapsing or expanding.  

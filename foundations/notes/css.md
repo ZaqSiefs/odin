@@ -452,3 +452,69 @@ This property allows us to created complicated layouts that can scale to any scr
 ```flex: none``` = ```flex: 0 0 auto```. Sizes item according to width and height.  Makes the flex item fully inflexible.
 
 ```fles: <positive-number>``` = ```flex: <positive-number> 1 0```. Makes flex item flexible and sets basis to 0.  Receives the specified proportion of the free space in the flex container.  If all items use this pattern, their sizes will be proportional to the specified flex factor.
+
+## Axes
+
+FLexboxes can work vertically or horizontally, and this is adjusted by using the ```flex-direction``` attribute to set the axis of an element.
+
+The set axis is the "main axis" and the other is the "cross axis".  The default axis is horizontal or "row".
+
+![flex-row](img/flex-row.svg) ![flex-column](img/flex-column.svg)
+
+Children will be bunched up at the start of the primary-axis of the container, and will stretch to fill out the entirety of the cross-axis of the container
+
+## Alignment
+
+```justify-content``` will align items across the main axis.
+
+> ```flex-start``` aligns to the start of the main axis'.
+>
+> ```flex-end ``` aligns to the end of the main axis.
+>
+> ```center``` aligns to the center of the main axis.
+>
+> ```space-between``` aligns items equal distance across the main axis, leaving no extra space on the ends.
+>
+> ```space-around``` aligns items equal distance across the main axis, dividing the extra space in half on each end.
+>
+> ```space-evenly``` aligns items equal distance across the main axis, including the ends.
+
+```align-items``` will align items across the cross axis.
+
+> ```flex-start``` aligns items to the start of the cross axis.
+>
+> ```flex-end``` aligns items to the end of the cross axis.
+>
+> ```center``` aligns items to the center of the cross axis.
+>
+> ```stretch``` stretches item from the start of the cross axis to the end.
+>
+> ```baseline``` aligns items to the start of the cross axis, but lines up the bottoms of each item instead of the tops.
+
+```align-self``` does the exact same thing as ```align-items``` but on individual items.
+
+```gap``` will add a buffer between each item in a container.
+
+## Uses for Flex
+
+Flexbox is usually used for laying out a collection of items in one direction.  It also allows fluid control of the dimensions of the items in that one dimension.  People commonly use it for jobs better done by Grid Layout, as a fallback for Grid, and in order to get alignment capabilities.
+
+### Navigation
+
+Since nav lists are typically displayed in a horizontal bar, and lends itself well to flexbox
+
+### Center an Item
+
+Vertical centering is made very easy with flexbox, and centering an item on the screen is made easy using ```align-items: center``` and ```justify-content: center```
+
+### Card layout pushing footer down
+
+If you have a card section, and need a consistent placement of the footer no matter the amount of content, flexbox is for you.
+
+### Media Objects
+
+For when there is an image/video/whatever that also has text/comments to the side of it.  This allows for the media item to take up as much space as it needs with the text conforming to it.
+
+### Form Controls
+
+Any search bar or form entry bar should adapt to the screen size, along with the submission button remaining in the same spot.
