@@ -293,3 +293,58 @@
 > ### Why do the previous two questions have different answers?
 >
 >> This is because ```flex-basis``` refers to the minimum pixel length that elements must occupy before collapsing or expanding.  
+
+## Javascript Fundamentals part 1
+
+> ### Name the three ways to declare a variable
+>
+>> ```var```, ```let```, ```const```
+>
+> ### Which of the three variable declarations should you avoid and why?
+>
+> ```var``` because it is older.
+>
+> ### What rules should you follow when naming variables?
+>
+>> Clear, descriptive, uppercase for const, camel or snake case.
+>
+> ### What happens when you add numbers an strings together?
+>
+>> String concatanation from left to right.
+>
+> ### How does the Modulo (%), or Remainder, operator work?
+>
+>> It calculates the remainder of one number divided by another.
+>
+> ### Explain the difference between ```==``` and ```===```.
+>
+>> ```==``` is an equality operator that ignores type. ```===``` is an equality operator that includes type.
+>
+> ### When would you receive a NaN result?
+>
+>> When an invalid operation is performed.
+>
+> ### How do you increment and decrement a number?
+>
+>> ```++``` increments and ```--``` decrements.
+>
+> ### Explain the difference between prefixing and postfixing increment/decrement operators.
+>
+>> Both pre- and post-fixes perform the same operation, except that the pre-fixed version will perform the operation before variable assignment.
+>
+> ### What is operator precedence and how is it handled in JS?
+>
+>> Operator precedence is the order of importance of code operations.  
+>> [JS order of precedence](https://docs.google.com/spreadsheets/d/1oz2XsTRWHOTrxgZsjedmWJjGYmddEk5-lVXisVvfaWU/edit#gid=0)
+>
+> ### How do you access developer tools and the console?
+>
+>> MacOS: ```cmd``` + ```opt``` + ```J``` 
+>
+> ### How do you log information to the console?
+>
+>> ```console.log();```
+>
+> ### What does unary plus operator do to string representaions of integers?
+>
+>> Attempts to convert it to a number, or else returns NaN.
